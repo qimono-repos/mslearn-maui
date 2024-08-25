@@ -23,6 +23,12 @@
                 WidthRequest="100"
                 Clicked="OnSaveButtonClicked"
             />
+            <Button 
+                Grid.Column="2"
+                Text="Delete"
+                WidthRequest="100"
+                Clicked="OnDeleteButtonClicked"
+            />
         </Grid>
 
     </VerticalStackLayout>
