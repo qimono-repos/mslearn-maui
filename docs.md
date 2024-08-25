@@ -1,0 +1,11 @@
+dotnet build 
+-t:Run 
+-p:Configuration=Debug 
+-f net8.0-android 
+-p:AdbTarget=-s%2029111JEGR03451 
+-p:AndroidAttachDebugger=true 
+-p:AndroidSdbTargetPort=52495 
+-p:AndroidSdbHostPort=52495
+-p:CustomAfterMicrosoftCSharpTargets="c:\Users\alber\.vscode-insiders\extensions\ms-dotnettools.dotnet-maui-1.2.15-win32-x64\dist\resources\Custom.After.Microsoft.CSharp.targets"
+-p:MauiVSCodeBuildOutputFile="C:\Users\alber\AppData\Local\Temp\dotnet-maui\maui-vsc-42631c11-9d58-461d-841b-80ab40eadd83.json" '-p:JavaSdkDirectory="C:\Program Files (x86)\Android\openjdk\jdk-17.0.8.101-hotspot"'
+ -p:XamlTools="c:\Users\alber\.vscode-insiders\extensions\ms-dotnettools.csharp-2.39.29-win32-x64\.xamlTools" C:\Users\alber\source\repos\mslearn-dotnetmaui-create-user-interface-xaml\exercise1\Notes\Notes.csproj

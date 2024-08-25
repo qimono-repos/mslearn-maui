@@ -7,7 +7,7 @@ public partial class MainPage : ContentPage
 
     public MainPage()
     {
-        var notesHeading = new Label() { Text = "Notes ABC", HorizontalOptions = LayoutOptions.Center, FontAttributes = FontAttributes.Bold };
+        var notesHeading = new Label() { Text = "Notes TEST", HorizontalOptions = LayoutOptions.Center, FontAttributes = FontAttributes.Bold };
 
         editor = new Editor() { Placeholder = "Enter your note", HeightRequest = 100 };
         editor.Text = File.Exists(_fileName) ? File.ReadAllText(_fileName) : string.Empty;
@@ -33,7 +33,7 @@ public partial class MainPage : ContentPage
             Children = { notesHeading, editor, buttonsGrid }
         };
 
-        this.Content = stackLayout;
+        //this.Content = stackLayout;
     }
 
     void OnSaveButtonClicked(object sender, EventArgs e)
