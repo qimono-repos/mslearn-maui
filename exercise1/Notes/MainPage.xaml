@@ -5,14 +5,41 @@
 			 
     <VerticalStackLayout Margin="30,60,30,30">
         <Label 
-            Text="NOTES"
+            Text="DATOS PERSONALES"
             HorizontalOptions="Center"
             FontAttributes="Bold"
             >
         </Label>
         <Editor
             x:Name="editor" 
-            Placeholder="Enter your Note"
+            Placeholder="Domicilio, Fech Nac, DU, Est Civ, nacionalidad, Telefono"
+            HeightRequest="100"
+        />
+
+        <Label 
+            Padding="0,25,0,0"
+            Text="ESTUDIOS CURSADOS"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            >
+        </Label>
+        <Editor
+            x:Name="editorStudies" 
+            Placeholder="Primario,Secundario,Terciario,Cursos,Idiomas"
+            HeightRequest="100"
+        />
+
+
+        <Label 
+            Padding="0,25,0,0"
+            Text="PERFIL PROFESIONAL"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            >
+        </Label>
+        <Editor
+            x:Name="editorProfile" 
+            Placeholder="Areas con Experiencia comprobable"
             HeightRequest="100"
         />
 
