@@ -46,7 +46,11 @@
             HeightRequest="100"
         />
 
-        <Grid ColumnDefinitions="Auto, 30, Auto">
+            <!-- ColumnDefinitions="Auto, 30, Auto" -->
+        <Grid 
+            ColumnDefinitions="*, 30, *" 
+            HorizontalOptions="Center"
+            >
             <Button 
                 Grid.Column="0" 
                 Text="Save"
