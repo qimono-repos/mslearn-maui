@@ -15,7 +15,7 @@
         <Editor
             x:Name="editor" 
             Placeholder="Domicilio, Fech Nac, DU, Est Civ, nacionalidad, Telefono"
-            HeightRequest="100"
+            HeightRequest="{OnPlatform 100,Android=200,iOS=500}"
             TextColor="{x:Static Member=notes:SharedResources.FontColor}"
         />
 
